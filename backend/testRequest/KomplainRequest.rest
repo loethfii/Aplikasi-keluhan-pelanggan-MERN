@@ -1,0 +1,34 @@
+get http://localhost:5000/komplain
+Authorization: "eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MmE2MmEyZDUzMmY1OGNhMmQyZWExYTciLCJlbWFpbCI6Imx1dGhmaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6Imx1dGhmaSIsIm5hbWFfcGVueWV3YSI6IkFyaWYgTHV0aGZpIFJvbWFkaG9uaSIsInJvbGUiOiIyIiwibm9fa29udHJha2FuIjoiQTEwMSIsImNyZWF0ZWRBdCI6IjIwMjItMDYtMTJUMTg6MDI6MjEuMjE2WiIsInVwZGF0ZWRBdCI6IjIwMjItMDYtMTJUMTg6MDI6MjEuMjE2WiIsIl9fdiI6MH0.ve9ihDxHAPl0B4kPFfBTHKK9F4YxvjIB5S351_EAAHE"
+
+###
+//get id
+GET http://localhost:5000/komplain/62b013909fdb2003db2f01c0 
+
+###
+//pengaduan komplain
+POST http://localhost:5000/komplain
+Content-Type: application/json
+
+{
+    "nama_kendala" : "Wc Mampet",
+    "bukti_foto1" : "wc_mampet.jpg",
+    "bukti_foto2" : "wc_mampet.jpg",
+    "bukti_foto3" : "wc_mampet.jpg",
+    "bukti_vidio" : "wc_mampet.mp4",
+    "deskripsi" : "Saat pukul 5 sore saya ke kamar mandi toilet baik - baik saja tapi saat jam 1 malam saat saya ke kamar mandi dan membilas tai saya tiba2 saja tidak mau tenggelam alias mampet",
+    "status_pengerjaan" : "1"
+} 
+
+###
+
+//update kendala
+PATCH http://localhost:5000/komplain/62b013909fdb2003db2f01c0
+Content-Type: application/json
+
+{
+    "cara_pengerjaan" : "Mengganti keran yang bocor",
+    "biaya_pengananan" : 200000
+}
+
+###

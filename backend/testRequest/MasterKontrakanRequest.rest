@@ -1,0 +1,28 @@
+//get master kontrkan
+GET http://localhost:5000/masterkontrakan
+
+###
+//get contrakan by ID
+GET http://localhost:5000/masterkontrakan/6257a8f1ff56f34501ea4563
+###
+
+//input master kontrakan
+POST http://localhost:5000/masterkontrakan
+Content-Type: application/json
+
+{
+    "no_kontrakan" : "B-09"
+}
+
+###
+//update kontrkan
+//
+PATCH http://localhost:5000/masterkontrakan/6258442bbf48b4e70394c802
+Content-Type: application/json
+
+{
+    "no_kontrakan" : "A-"
+}
+
+###
+DELETE http://localhost:5000/masterkontrakan/62609fd264be94f753f72c0a

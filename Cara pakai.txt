@@ -1,0 +1,9 @@
+cara pake aplikasi ini
+
+1. Download atau clone
+2. Install dependensi
+3. Hubungkan ke database mongo kamu, di folder backend>app.js
+4. Enjoy...
+
+
+warning! backend dan frontend harus dibuka di masing2 kode editor jangan pakai satu kode editor untuk buka kedua folder 

@@ -1,0 +1,15 @@
+get http://localhost:5000/komplain-lanjutan
+
+###
+POST http://localhost:5000/komplain-lanjutan
+
+Content-Type: multipart/form-data
+{
+    "nama_kendala" : "Wc Mampet",
+    "bukti_foto1" : "wc_mampet.jpg",
+    "bukti_foto2" : "wc_mampet.jpg",
+    "bukti_foto3" : "wc_mampet.jpg",
+    "bukti_vidio" : "wc_mampet.mp4",
+    "deskripsi" : "Saat pukul 5 sore saya ke kamar mandi toilet baik - baik saja tapi saat jam 1 malam saat saya ke kamar mandi dan membilas tai saya tiba2 saja tidak mau tenggelam alias mampet",
+    "status_pengerjaan" : "1"
+}

@@ -1,0 +1,36 @@
+GET http://localhost:5000/user
+
+###
+//input data
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "email" : "angga@gmail.com",
+    "password" : "angga444",
+    "nama_penyewa" : "Angga Rahman",
+    "role" : "1",
+    "no_kontrakan" : "1"
+}
+
+//email, password,nama_penyewa, role,no_kontrakan
+
+###
+//cari berdasarkan id
+GET http://localhost:5000/user/625af276a390821ac7849585
+###
+//update data user
+PATCH http://localhost:5000/user/625af276a390821ac7849585
+Content-Type: application/json
+
+{
+    "email" : "rangga707@gmail.com",
+    "password" : "rangga123",
+    "nama_penyewa" : "Rangga",
+    "role" : "1",
+    "no_kontrakan" : "3"
+}
+
+###
+//delete user
+DELETE http://localhost:5000/user/625af9706e1fa1b8b5f902f0

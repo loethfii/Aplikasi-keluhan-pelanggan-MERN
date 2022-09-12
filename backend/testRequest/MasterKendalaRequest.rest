@@ -1,0 +1,28 @@
+//masterkendala get / tampilkan semua data yang ada
+GET  http://localhost:5000/masterkendala
+###
+
+//cari dengan id
+GET http://localhost:5000/masterkendala/625820e030be85842dd02ad2
+
+###
+//Imput Master kendala
+POST http://localhost:5000/masterkendala
+Content-Type: application/json
+
+{
+    "nama_kendala" : "Tembok Mrembee"
+}
+### 
+//update kendala
+PATCH http://localhost:5000/masterkendala/6260b00be9d4a301aec1925b
+Content-Type: application/json
+
+{
+    "nama_kendala" : "Waia"
+}
+
+###
+//hapus satu data
+DELETE http://localhost:5000/masterkendala/6257a27ee787ff9f9df32d40
+
